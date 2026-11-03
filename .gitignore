@@ -1,0 +1,9 @@
+node_modules/
+.output/
+.wxt/
+dist/
+*.zip
+.env
+native-host/*.bat
+native-host/*.sh
+native-host/*.json

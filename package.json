@@ -1,0 +1,36 @@
+{
+  "name": "language-reactor-netflix",
+  "description": "Learn languages with Netflix: dual subtitles, transcript sidebar, word lookup, saved words and Anki export.",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "compile": "tsc --noEmit",
+    "test": "vitest run",
+    "claude:install": "node scripts/install-claude-host.mjs",
+    "claude:uninstall": "node scripts/install-claude-host.mjs --uninstall",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "@huggingface/transformers": "^3.8.1",
+    "@preact/signals": "^2.11.2",
+    "idb": "^8.0.3",
+    "kokoro-js": "^1.2.1",
+    "pinyin-pro": "^3.29.4",
+    "preact": "^10.29.8",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/chrome": "latest",
+    "happy-dom": "^20.14.5",
+    "typescript": "^5.9.3",
+    "vite": "^7.0.0",
+    "vitest": "^5.0.2",
+    "wxt": "^0.21.4"
+  }
+}
